@@ -1,36 +1,179 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 數學星球 🌟
 
-## Getting Started
+> **專為台灣小六～國三女生設計的互動數學學習平台，對應 108 課綱**
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ 專案簡介
+
+**數學星球**以「降低學習焦慮、提升信心」為核心設計理念，用真實生活情境包裝數學概念，讓學生在互動遊戲中自然地學好數學。
+
+- 🎭 每個單元都有獨特的**情境故事**（例如：甜點師、設計師、田徑教練…）
+- 📐 所有內容對應**台灣 108 課綱**學習碼
+- 👩‍🔬 每單元介紹一位**女性科學家**，建立榜樣認同
+- 🎯 互動練習（選擇題＋填空題）附即時回饋與解說
+- 📈 自動記錄**學習進度**（localStorage）
+
+---
+
+## 🗺️ 規劃路線圖
+
+### 目前進度
+
+```
+小六 ██████████ 100%  ✅ 已完成（6 個單元）
+國一 ░░░░░░░░░░   0%  📋 規劃中
+國二 ░░░░░░░░░░   0%  📋 規劃中
+國三 ░░░░░░░░░░   0%  📋 規劃中
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Phase 1 — 小六（✅ 已完成）
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| 單元 | 課綱碼 | 情境 | 狀態 |
+|------|--------|------|------|
+| 分數四則運算 | N-6-1 | 🧁 食譜換算實驗室 | ✅ |
+| 比與比值 | N-6-5 | 🎨 調色盤魔法師 | ✅ |
+| 速率 | N-6-4 | 🏃‍♀️ 跑步節奏追蹤器 | ✅ |
+| 圓的面積與周長 | S-6-1 | ⭕ 徽章設計工坊 | ✅ |
+| 柱體體積 | S-6-3 | 📦 包裝設計師 | ✅ |
+| 統計圖表 | D-6-1 | 📊 班級調查分析師 | ✅ |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Phase 2 — 國一（📋 規劃中）
 
-## Learn More
+| 單元 | 課綱碼 | 情境 | 狀態 |
+|------|--------|------|------|
+| 整數與負數 | N-7-1 | 🌡️ 溫度計與地圖高度 | 📋 |
+| 代數：文字符號 | A-7-1 | 🔐 解謎信件密碼 | 📋 |
+| 一元一次方程式 | A-7-2 | 🛒 市場購物計算 | 📋 |
+| 比例式 | N-7-3 | 🗺️ 地圖縮放師 | 📋 |
+| 平行線與角 | S-7-1 | 🏛️ 建築設計草圖 | 📋 |
+| 三角形全等 | S-7-4 | 🧩 拼圖工坊 | 📋 |
 
-To learn more about Next.js, take a look at the following resources:
+### Phase 3 — 國二（📋 規劃中）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| 單元 | 課綱碼 | 情境 | 狀態 |
+|------|--------|------|------|
+| 整式乘除與因式分解 | A-8-1 | 🔑 密碼因子解鎖 | 📋 |
+| 聯立方程式 | A-8-2 | 🐾 雙寵物食物分配 | 📋 |
+| 勾股定理 | S-8-4 | 🏙️ 城市對角線距離 | 📋 |
+| 相似形 | S-8-5 | 📷 植物攝影縮放 | 📋 |
+| 統計與機率 | D-8-1 | 🎲 抽獎遊戲分析 | 📋 |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Phase 4 — 國三（📋 規劃中）
 
-## Deploy on Vercel
+| 單元 | 課綱碼 | 情境 | 狀態 |
+|------|--------|------|------|
+| 二次方根 | N-9-1 | 🎨 藝術正方形拼貼 | 📋 |
+| 一元二次方程式 | A-9-1 | 🏀 拋物線軌跡謎題 | 📋 |
+| 一次函數 | A-9-3 | 🚕 計程車費用圖表 | 📋 |
+| 二次函數 | A-9-4 | 🏀 籃球拋物線模擬 | 📋 |
+| 圓的性質 | S-9-2 | 🔭 天文台穹頂設計 | 📋 |
+| 機率 | D-9-1 | 🃏 抽卡機率計算機 | 📋 |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ 技術架構
+
+```
+teacher/
+├── src/
+│   ├── app/
+│   │   ├── globals.css              # 全站設計系統（CSS Variables, 動畫）
+│   │   ├── layout.tsx               # 根 Layout（SEO meta）
+│   │   ├── page.tsx                 # 首頁
+│   │   └── grade/
+│   │       └── [grade]/
+│   │           ├── page.tsx         # 年級單元列表頁
+│   │           └── [unit]/
+│   │               └── page.tsx     # 單元學習頁
+│   ├── components/
+│   │   ├── Navbar.tsx               # 全站導航列
+│   │   ├── GradeProgressBar.tsx     # 學習進度條（Client）
+│   │   └── UnitContent.tsx          # 互動學習主元件（Client）
+│   └── lib/
+│       ├── curriculum.ts            # 所有課綱內容資料（TypeScript）
+│       └── progress.ts              # localStorage 進度 Hook
+├── public/
+├── next.config.ts
+└── package.json
+```
+
+### 技術選型
+
+| 技術 | 用途 |
+|------|------|
+| **Next.js 16** (App Router) | 前端框架，SSG 靜態生成 |
+| **TypeScript** | 型別安全 |
+| **Vanilla CSS** (CSS Variables) | 設計系統，無框架依賴 |
+| **KaTeX** | 數學公式渲染 |
+| **localStorage** | 本地學習進度記錄 |
+| **Vercel** | 部署平台（CI/CD） |
+
+### 設計系統色彩
+
+| 名稱 | 色碼 | 用途 |
+|------|------|------|
+| 深夜藍 | `#0a0820` | 主背景 |
+| 深紫藍 | `#7c5cbf` | 主色 |
+| 金黃 | `#f5b641` | 強調色 |
+| 薄荷綠 | `#3ecfb2` | 輔助色 |
+
+---
+
+## 🚀 本機開發
+
+```bash
+# 安裝依賴
+npm install
+
+# 啟動開發伺服器
+npm run dev
+```
+
+開啟 [http://localhost:3000](http://localhost:3000) 即可預覽。
+
+### 新增課程內容
+
+所有課程內容集中管理於 `src/lib/curriculum.ts`。新增單元只需在對應年級的 `units` 陣列加入資料物件，包含：
+- `concepts`：概念說明（支援 KaTeX 公式）
+- `examples`：例題（步驟式解說）
+- `quiz`：練習題（`choice` 或 `fill` 型態）
+- `scientist`：女性科學家故事
+
+---
+
+## 📋 待辦清單（Backlog）
+
+### 功能
+- [ ] 國一 ～ 國三完整內容
+- [ ] 函數圖形互動（Plotly.js）
+- [ ] 拖曳排序題型
+- [ ] 單元結束成就徽章動畫
+
+### 基礎建設
+- [ ] 帳號系統（雲端進度同步）
+- [ ] 教師後台（查看班級統計）
+- [ ] PWA 支援（離線學習）
+- [ ] 無障礙設計（WCAG 2.1）
+
+---
+
+## 🌐 部署
+
+本專案部署於 **Vercel**，透過 GitHub 自動 CI/CD：
+- `main` / `master` branch push → 自動部署 Production
+
+手動部署：
+```bash
+npx vercel --prod
+```
+
+---
+
+## 📄 授權
+
+MIT License — 歡迎自由使用於教育用途。
